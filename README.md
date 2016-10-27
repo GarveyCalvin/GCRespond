@@ -1,10 +1,16 @@
 # GCRespond
 
-GCRespond was created by GarveyCalvin and is maintained by the former. Make the block as call back from action of UIControl.
+Make the block as call back from action of UIControl.
+
+GCRespond is support iOS 7 and newer.
+
+GCRespond was created by GarveyCalvin and is maintained by the former.
 
 
 
-Sample:
+# Sample
+
+UISteper, UIButton, UISlider …
 
 ```objective-c
 [self.steper gc_addControlEvents:UIControlEventValueChanged action:^(UIStepper*  _Nonnull sender) {
@@ -28,6 +34,7 @@ Sample:
 
 1. Drag GCRespond folder to your project using the Navigator.
 2. add `import "UIControl+GCResponder.h"` code when you use.
+
 
 
 
