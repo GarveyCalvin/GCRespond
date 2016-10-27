@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brI-8J-jrV">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yxy-Tb-n8j"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VfN-IW-vLf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="JZK-se-uDp"/>
+                                </constraints>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="brI-8J-jrV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PMf-dm-z2Q"/>
+                            <constraint firstItem="brI-8J-jrV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7D-TQ-ldh"/>
+                            <constraint firstItem="brI-8J-jrV" firstAttribute="top" secondItem="yxy-Tb-n8j" secondAttribute="bottom" constant="36" id="mvC-hv-dg4"/>
+                            <constraint firstItem="yxy-Tb-n8j" firstAttribute="centerX" secondItem="brI-8J-jrV" secondAttribute="centerX" id="sf8-sY-URZ"/>
+                            <constraint firstItem="VfN-IW-vLf" firstAttribute="top" secondItem="brI-8J-jrV" secondAttribute="bottom" constant="25" id="sqZ-5f-bL2"/>
+                            <constraint firstItem="VfN-IW-vLf" firstAttribute="centerX" secondItem="brI-8J-jrV" secondAttribute="centerX" id="tYh-qK-bzn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="brI-8J-jrV" id="mF5-ZG-mwg"/>
+                        <outlet property="slider" destination="VfN-IW-vLf" id="ssA-DT-p9e"/>
+                        <outlet property="steper" destination="yxy-Tb-n8j" id="0Tr-k9-Bp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
